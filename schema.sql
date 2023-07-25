@@ -5,7 +5,7 @@ USE etracker_db;
 
 CREATE TABLE department (
      id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-     name VARCHAR(30) NOT NULL, 
+     name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE role (
@@ -26,7 +26,10 @@ CREATE TABLE employee (
     manager_id INT, 
     FOREIGN KEY (role_id)
     REFERENCES role(id)
-    ON DELETE CASCADE
+    ON DELETE CASCADE, 
+    FOREIGN KEY (manager_id)
+    REFERENCES employee(id)
+    ON DELETE SET NULL
 ); 
    
  
