@@ -4,8 +4,8 @@ CREATE DATABASE etracker_db;
 USE etracker_db;
 
 CREATE TABLE department (
-  id INT NOT NULL PRIMARY KEY,
-  name VARCHAR(30) NOT NULL 
+     id INT NOT NULL PRIMARY KEY,
+     name VARCHAR(30) NOT NULL, 
 );
 
 CREATE TABLE role (
@@ -31,3 +31,6 @@ CREATE TABLE employee (
    
  
 --  MANAGER_ID LINKS TO ID IN THE EMPLOYEE TABLE
+-- line 8 'name'
+-- was just name
+-- line 28 'role'
